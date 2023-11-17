@@ -9,81 +9,17 @@
 
 	<body>
 		<form action="">
-			<!-- <h1>To-Do List</h1> -->
-			<input id="taskInput" type="text" placeholder="Add a new task" class="todo-container" />
-			<button type="button" id="addButton" class="addbutton">Add Task</button>
+			<div class="maincontainer">
+				<!-- <h1>To-Do List</h1> -->
+				<input id="taskInput" type="text" placeholder="Add a new task" class="todo-container" />
+				<button type="button" id="addButton" class="addbutton">Add Task</button>
 
-			<div class="box">
-				<ul id="taskList"></ul>
+				<div>
+					<ul id="taskList"></ul>
+				</div>
 			</div>
 		</form>
 
-		<script>
-			// let list = document.getElementsByTagName('li')
-			// 			let listid = 'li' + list.length
-			// 			function todo() {
-			// 				let a = document.getElementById('add').value
-			// 				if (a == '') {
-			// 					alert('Please enter a valid todo list')
-			// 				} else {
-			// 					let list = document.getElementsByTagName('li')
-			// 					let listid = 'li' + list.length
-			// 					console.log(listid)
-
-			// 					document.getElementById('add').value = ''
-			// 					document.getElementById('show').innerHTML +=
-			// 						'<li class="listyle" id = ' +
-			// 						listid +
-			// 						' value = ' +
-			// 						listid +
-			// 						' name = "getit" >' +
-			// 						a +
-			// 						'<button type="button" id="btn" class="strikebtn todobtn"><i class="fa-solid fa-check"></i></button>' +
-			// 						'<button type="button"  class="removebtn todobtn"><i class="fa-solid fa-xmark"></i></button>' +
-			// 						'</li>'
-			// 				}
-			// 			}
-
-			document.addEventListener('DOMContentLoaded', function () {
-				// const taskInput = document.getElementById('taskInput')
-				// const addButton = document.getElementById('addButton')
-				// const taskList = document.getElementById('taskList')
-
-				addButton.addEventListener('click', function () {
-					const taskText = taskInput.value.trim()
-					// console.log(taskText)
-					if (taskText) {
-						const taskItem = document.createElement('li')
-						taskItem.innerHTML = `
-					  <span class="listyle">${taskText}</span>
-					  <button type="button" class="strikebtn todobtn"><i class="fa-solid fa-check"></i></button>
-			                   <button type="button" class="removebtn todobtn"> <i class="fa-solid fa-xmark"></i></button>
-					`
-						taskList.appendChild(taskItem)
-						taskInput.value = ''
-					}
-				})
-
-				// taskList.addEventListener('click', function (e) {
-				// 	if (e.target.classList.contains('strikebtn')) {
-				// 		e.target.parentElement.classList.toggle('strike')
-				// 	}
-				// })
-				// taskList.addEventListener('click', function (f) {
-				// 	if (f.target.classList.contains('removebtn')) {
-				// 		f.target.parentElement.remove()
-				// 	}
-				// })
-
-				taskList.addEventListener('click', function (f) {
-					if (f.target.classList.contains('removebtn')) {
-						f.target.parentElement.remove()
-					}
-					if (f.target.classList.contains('strikebtn')) {
-						f.target.parentElement.classList.toggle('strike')
-					}
-				})
-			})
-		</script>
+		<script src="js/js.js"></script>
 	</body>
 </html>
