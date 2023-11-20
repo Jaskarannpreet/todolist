@@ -3,27 +3,47 @@
     padding: 0;
     box-sizing: border-box;
 }
-.todo-container {
-    height: 5vh;
+.maincontainer{
+    min-height: 90vh;
     width: 80vw;
-    margin-top: 10vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 5vh;
+    margin-left: 10vw;
+
+}
+.todo-container {
+    height: 7vh;
+    width: 59vw;
+    /* margin-top: 10vh; */
     border-radius: 10px ;
     padding: 10px;
     margin-left: 5vw;
+    border: none;
+    background-color: whtie;
+    color: rgb(0, 0, 0);
+    font-size: 2vh;
+
+
 }
 .addbutton {
-    height: 5vh;
+    height: 7vh;
     min-width: 10vw;
     margin-top: 10vh;
-    background-color: greenyellow;
+    background-color: black;
     border-style: none;
     border-radius: 10px;
+    border: none;
+    color: white;
+    margin-left: 1vw;
+
     
 }
 
 ul li {
     list-style-type: none;
     margin: 10px;
+    line-height: 60px;
+    color: rgb(0, 0, 0);
 }
 .addbutton:hover {
     background-color: limegreen;
@@ -31,11 +51,17 @@ ul li {
 
 .box {
     
-    min-height: 60vh;
-    width: 90vw;
-    background-color: greenyellow;
-    margin-top: 5px;
+    min-height: 30px;
+    width: 70vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top: 10px;
     margin-left: 5vw;
+    border: none;;
+    padding: 5px;
+    padding: 0 30px;
+font-size: 18px;
+    
 }
 .todobtn {
     min-height: 50px;
@@ -43,14 +69,21 @@ ul li {
     float: right;
     margin: 5px;
     padding: 5px;
+    
 }
 .listyle {
     font-size: 18px;
-    line-height: 60px;
+    line-height: 30px;
 }
 .strike {
     text-decoration: line-through;
+    background-color: rgba(40, 255, 40, 0.72);
+    color: rgb(159, 0, 0);
 }
 body {
-    background-image: linear-gradient(to right, #ffe5b4 , skyblue);
+    background-image: url("../images/1.jpg");
+    background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+
 }
